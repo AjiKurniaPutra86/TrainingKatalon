@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>development</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'/APK/mobile-debug.apk'</initValue>
+      <name>appDev</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'/APK/mobile-debug-jos.apk'</initValue>
+      <name>appDevCurrent</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>
