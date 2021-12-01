@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_phone_login_form</name>
+   <name>input_otp</name>
    <tag></tag>
-   <elementGuidId>2bb26b23-04c1-425f-bc35-11aac592723d</elementGuidId>
+   <elementGuidId>5928b3cd-18a2-4113-a02e-fbeb4f8429f2</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//android.widget.EditText[@resource-id='id.co.fundtastic.client:id/et_phone']
+         <value>//android.widget.EditText[@resource-id='id.co.fundtastic.client:id/et_otp']
 </value>
       </entry>
    </selectorCollection>
@@ -18,7 +18,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//android.widget.EditText[@resource-id='id.co.fundtastic.client:id/et_phone']
+      <value>//android.widget.EditText[@resource-id='id.co.fundtastic.client:id/et_otp']
 </value>
    </webElementProperties>
 </WebElementEntity>

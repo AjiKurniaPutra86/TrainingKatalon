@@ -26,12 +26,17 @@ Mobile.callTestCase(findTestCase('Mobile Andro/Scenario/Login/001 Onboarding'), 
 String pop_up_phone_empty = 'Nomor Handphone Kosong'
 String pop_up_phone_unregistered = 'Nomor handphone belum terdaftar'
 String pop_up_phone_less_caracter = 'Nomor Handphone Harus lebih dari 8 karakter'
+String titleOtp = 'Verifikasi Nomor HP'
+String noOTP ='8888'
+String noHp = '085758596061'
 
 Mobile.callTestCase(findTestCase('Mobile Andro/Scenario/Login/002 Form Login'), [
 	'pop_up_phone_empty': pop_up_phone_empty,
 	'pop_up_phone_unregistered' : pop_up_phone_unregistered,
-	'pop_up_phone_less_caracter' : pop_up_phone_less_caracter,]
-, FailureHandling.STOP_ON_FAILURE)
+	'pop_up_phone_less_caracter' : pop_up_phone_less_caracter,
+	'titleOtp' : titleOtp ,
+	'noOTP' : noOTP ,
+	'noHp': noHp ], FailureHandling.STOP_ON_FAILURE)
 
 
 

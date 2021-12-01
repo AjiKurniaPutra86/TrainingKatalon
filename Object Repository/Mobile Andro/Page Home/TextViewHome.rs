@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_phone_login_form</name>
+   <name>TextViewHome</name>
    <tag></tag>
-   <elementGuidId>2bb26b23-04c1-425f-bc35-11aac592723d</elementGuidId>
+   <elementGuidId>4892b7e0-a228-4e3b-82ac-7a3849263aa0</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//android.widget.EditText[@resource-id='id.co.fundtastic.client:id/et_phone']
-</value>
+         <value>//android.widget.TextView[@resource-id='id.co.fundtastic.client:id/largeLabel' and @text='Home']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -18,7 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//android.widget.EditText[@resource-id='id.co.fundtastic.client:id/et_phone']
-</value>
+      <value>//android.widget.TextView[@resource-id='id.co.fundtastic.client:id/largeLabel' and @text='Home']</value>
    </webElementProperties>
 </WebElementEntity>

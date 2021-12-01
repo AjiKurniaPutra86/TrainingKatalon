@@ -35,6 +35,8 @@ if (Mobile.verifyEqual(pop_up_phone_empty, 'Nomor Handphone Kosong')) {
 		
 		Mobile.comment('Pop up phone less 8 caracter success')
 		
+		Mobile.delay(5)
+		
 		Mobile.clearText(findTestObject('Object Repository/Mobile Andro/Page Login/Onboarding/input_phone_login_form'), 0)
 					
 		Mobile.setText(findTestObject('Object Repository/Mobile Andro/Page Login/Onboarding/input_phone_login_form'), '08343265564', 0)
@@ -49,9 +51,20 @@ if (Mobile.verifyEqual(pop_up_phone_empty, 'Nomor Handphone Kosong')) {
 			
 			Mobile.tap(findTestObject('Object Repository/Mobile Andro/Page Login/Onboarding/input_phone_login_form'), 0)
 			
-			Mobile.clearText(findTestObject('Object Repository/Mobile Andro/Page Login/Onboarding/input_phone_login_form'), 30)
+			Mobile.delay(3)
 			
-			Mobile.setText(findTestObject('Object Repository/Mobile Andro/Page Login/Onboarding/input_phone_login_form'), '08999777912', 0)
+			Mobile.clearText(findTestObject('Object Repository/Mobile Andro/Page Login/Onboarding/input_phone_login_form'), 0)
+			 
+			boolean suggestionNumber = Mobile.verifyElementVisible(findTestObject('Object Repository/Mobile Andro/Page Login/Form Login/suggestionNumber'), 0)
+			
+			if (suggestionNumber) {
+				
+				Mobile.tap(findTestObject('Object Repository/Mobile Andro/Page Login/Form Login/suggestionNumber'), 0)
+				
+				Mobile.clearText(findTestObject('Object Repository/Mobile Andro/Page Login/Onboarding/input_phone_login_form'), 0)
+			} 
+						
+			Mobile.setText(findTestObject('Object Repository/Mobile Andro/Page Login/Onboarding/input_phone_login_form'), noHp, 0)
 			
 			Mobile.tap(findTestObject('Object Repository/Mobile Andro/Page Login/Form Login/button_form_masuk'), 0)
 			
@@ -60,7 +73,20 @@ if (Mobile.verifyEqual(pop_up_phone_empty, 'Nomor Handphone Kosong')) {
 			if (Mobile.verifyEqual(titleOtp, 'Verifikasi Nomor HP')) {
 				
 				Mobile.comment('Success to otp page')
+				
+				Mobile.setText(findTestObject('Object Repository/Mobile Andro/Page Login/Form Login/input_otp'), noOTP, 0)
+				
+				Mobile.tap(findTestObject('Object Repository/Mobile Andro/Page Login/Form Login/button_verifikasi_otp'), 0)
+				
+				boolean textHome = Mobile.verifyElementVisible(findTestObject('Object Repository/Mobile Andro/Page Home/TextViewHome'), 0)
+				
+				if (textHome) {
+					
+						Mobile.comment('Login Sukses')									}
+				
 			}else {
+				
+				Mobile.comment('Failed to OTP page')
 				
 			}
 		}else {

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_phone_login_form</name>
+   <name>button_verifikasi_otp</name>
    <tag></tag>
-   <elementGuidId>2bb26b23-04c1-425f-bc35-11aac592723d</elementGuidId>
+   <elementGuidId>aab8f906-5236-491e-a8ec-2701bb12158f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//android.widget.EditText[@resource-id='id.co.fundtastic.client:id/et_phone']
+         <value>//android.widget.TextView[@resource-id='id.co.fundtastic.client:id/btnVerified']
 </value>
       </entry>
    </selectorCollection>
@@ -18,7 +18,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//android.widget.EditText[@resource-id='id.co.fundtastic.client:id/et_phone']
+      <value>//android.widget.TextView[@resource-id='id.co.fundtastic.client:id/btnVerified']
 </value>
    </webElementProperties>
 </WebElementEntity>
